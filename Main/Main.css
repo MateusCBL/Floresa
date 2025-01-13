@@ -1,190 +1,109 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Be Vietnam Pro", serif;
-    line-height: 1.6;
-    color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
-  
-  header {
-    display: flex; /* Ativa o flexbox no header */
-    offset-anchor: 0;
-    flex-direction: column; /* Alinha itens em coluna */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    padding: 1px; /* Espaçamento interno */
-    background-color: #444; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    height: 100px; /* Define uma altura fixa para o header */
-  }
-  
-  header h1 {
-    margin: 0; /* Remove margens padrão */
-    font-size: 2rem; /* Define o tamanho do título */
-  }
-  #titulo2{
-    position: absolute;
-    top: 255px;
-    right: 20px;
-    letter-spacing: 5px;
-    font-family: "Be Vietnam Pro", serif;
-    left: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f4;
-  }
-  
-  .produtos {
-    display: grid;
+body {
+  font-family: "Be Vietnam Pro", serif;
+  line-height: 1.6;
+  color: #333;
+}
 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
-  }
-  
-  .produto {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .produto img {
-    width: 50%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .produtos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de igual largura */
-    gap: 1rem; /* Espaçamento entre os itens */
-    padding: 2rem;
-  }
-  
-  .produto {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    padding: 1rem;
-    background-color: #fff; /* Cor de fundo dos itens */
-  }
-  
-  .produto:hover {
-    border: 1px solid rgb(77, 193, 5);
-    transition: 0.5s;
-    color: white;
-    background-color: rgba(48, 82, 3, 0.5);  
-  }
-  .produto img {
-    width: 100%; /* As imagens ocupam 100% da largura da caixa */
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #444;
-    color: #fff;
-  }
-  
-  /* Estilização do cabeçalho */
-header {
-    display: flex;
-    justify-content: space-between; /* Espaça o título e o menu */
-    align-items: center; /* Alinha verticalmente */
-    padding: 1rem 2rem; /* Espaçamento interno */
-    background-color: #444; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-  }
-  
-  /* Estilização do título */
-  header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  
-  /* Estilização do menu */
-  .menu {
-    list-style: none; /* Remove os marcadores */
-    display: flex; /* Exibe os itens em linha */
-    gap: 1rem; /* Espaçamento entre os itens */
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilização dos links */
-  .menu a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: #fff; /* Cor do texto */
-    font-size: 1rem; /* Tamanho da fonte */
-    transition: color 0.3s; /* Transição suave para hover */
-  }
-  
-  .menu a:hover {
-    color: #ffd700; /* Cor ao passar o mouse */
-  }
 /* Estilização do cabeçalho */
 header {
-    display: flex;
-    justify-content: space-between; /* Espaça o título e o menu */
-    align-items: center; /* Alinha verticalmente */
-    padding: 1rem 2rem; /* Espaçamento interno */
-    background-color: #444; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-  }
-  
-  /* Estilização do título */
-  header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  
-  /* Estilização do menu */
-  .menu {
-    list-style: none; /* Remove os marcadores */
-    display: flex; /* Exibe os itens em linha */
-    gap: 1rem; /* Espaçamento entre os itens */
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilização dos links */
-  .menu a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: #fff; /* Cor do texto */
-    font-size: 1rem; /* Tamanho da fonte */
-    transition: color 0.3s; /* Transição suave para hover */
-  }
-  
-  .menu a:hover {
-    color: #ffd700; /* Cor ao passar o mouse */
-  }
-    
+  display: flex;
+  justify-content: space-between; /* Espaça o título e o menu */
+  align-items: center; /* Alinha verticalmente */
+  padding: 1rem 2rem; /* Espaçamento interno */
+  background-color: #444; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Estilização do título secundário */
+#titulo2 {
+  position: absolute;
+  top: 230px;
+  right: 20px;
+  letter-spacing: 5px;
+  font-family: "Be Vietnam Pro", serif;
+  left: 10px;
+}
+
+/* Estilização do menu */
+.menu {
+  list-style: none; /* Remove os marcadores */
+  display: flex; /* Exibe os itens em linha */
+  gap: 1rem; /* Espaçamento entre os itens */
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #fff; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte */
+  transition: color 0.3s; /* Transição suave para hover */
+}
+
+.menu a:hover {
+  color: #ffd700; /* Cor ao passar o mouse */
+}
+
+/* Seção de herói */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+/* Grid de produtos */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta para o tamanho da tela */
+  gap: 1rem;
+  padding: 2rem;
+  margin: 10px;
+}
+
+/* Estilização de cada produto */
+.produto {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff; /* Cor de fundo dos itens */
+}
+
+.produto:hover {
+  border: 1px solid rgb(77, 193, 5);
+  transition: 0.5s;
+  color: white;
+  background-color: rgba(48, 82, 3, 0.5);  
+}
+
+.produto img {
+  width: 50%; /* As imagens ocupam 100% da largura da caixa */
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Título da seção de produtos */
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Estilização do rodapé */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #444;
+  color: #fff;
+}
