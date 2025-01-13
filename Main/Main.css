@@ -1,4 +1,174 @@
-.Logo{
-    position: absolute;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    display: flex; /* Ativa o flexbox no header */
+    flex-direction: column; /* Alinha itens em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 1rem; /* Espaçamento interno */
+    background-color: #444; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    height: 15vh; /* Define uma altura fixa para o header */
+  }
+  
+  header h1 {
+    margin: 0; /* Remove margens padrão */
+    font-size: 2rem; /* Define o tamanho do título */
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
     justify-content: center;
-}
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .produto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de igual largura */
+    gap: 1rem; /* Espaçamento entre os itens */
+    padding: 2rem;
+  }
+  
+  .produto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff; /* Cor de fundo dos itens */
+  }
+  
+  .produto img {
+    width: 100%; /* As imagens ocupam 100% da largura da caixa */
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Estilização do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between; /* Espaça o título e o menu */
+    align-items: center; /* Alinha verticalmente */
+    padding: 1rem 2rem; /* Espaçamento interno */
+    background-color: #444; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+  }
+  
+  /* Estilização do título */
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  /* Estilização do menu */
+  .menu {
+    list-style: none; /* Remove os marcadores */
+    display: flex; /* Exibe os itens em linha */
+    gap: 1rem; /* Espaçamento entre os itens */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilização dos links */
+  .menu a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #fff; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: color 0.3s; /* Transição suave para hover */
+  }
+  
+  .menu a:hover {
+    color: #ffd700; /* Cor ao passar o mouse */
+  }
+/* Estilização do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between; /* Espaça o título e o menu */
+    align-items: center; /* Alinha verticalmente */
+    padding: 1rem 2rem; /* Espaçamento interno */
+    background-color: #444; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+  }
+  
+  /* Estilização do título */
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  /* Estilização do menu */
+  .menu {
+    list-style: none; /* Remove os marcadores */
+    display: flex; /* Exibe os itens em linha */
+    gap: 1rem; /* Espaçamento entre os itens */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilização dos links */
+  .menu a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #fff; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: color 0.3s; /* Transição suave para hover */
+  }
+  
+  .menu a:hover {
+    color: #ffd700; /* Cor ao passar o mouse */
+  }
+    
