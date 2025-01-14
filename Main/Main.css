@@ -11,6 +11,11 @@ body {
   color: #726E60;
 }
 
+#logo{
+  width: 20px;
+  height: 20px;
+}
+
 /* Estilização do cabeçalho */
 header {
   display: flex;
@@ -66,10 +71,10 @@ header h1 {
 /* Grid de produtos */
 .produtos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta para o tamanho da tela */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta para o tamanho da tela */
   gap: 1rem;
-  padding: 2rem;
-  margin: 10px;
+  padding: 1rem;
+  margin: 20px;
 }
 
 /* Estilização de cada produto */
@@ -82,10 +87,10 @@ header h1 {
 }
 
 .produto:hover {
-  border: 1px solid rgb(77, 193, 5);
+  border: 1px solid #442B48;
   transition: 0.5s;
-  color: white;
-  background-color: rgba(48, 82, 3, 0.5);  
+  color: #442B48;
+  background-color: rgb(182, 220, 118, 0.5);  
 }
 
 .produto img {
@@ -104,7 +109,10 @@ h2 {
 footer {
   text-align: center;
   padding: 1rem 0;
-  background-color: #444;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  background-color: #726E60;
   color: #fff;
 }
 
