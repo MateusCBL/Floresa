@@ -8,7 +8,7 @@ public class User {
 
 
     @Entity
-    public class User{
+    public class user{
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private  Long id;
