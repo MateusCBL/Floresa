@@ -22,4 +22,9 @@ public class UserController {
     public User creatUser(@RequestBody User user){
         return UserRepository.save(user);
     }
+    @GetMapping("/{id}")
+    public User getUserById(@PathVariable long id) {
+        return UserRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+    }
 }
