@@ -107,11 +107,13 @@ h2 {
 
 /* Estilização do rodapé */
 footer {
+   
+  position: fixed;
+  margin-bottom: 0;
+  bottom: 0%;
+  width: 100%;
   text-align: center;
   padding: 1rem 0;
-  flex-direction: column;
-  height: 100%;
-  display: flex;
   background-color: #726E60;
   color: #fff;
 }
