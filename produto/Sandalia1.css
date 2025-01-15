@@ -31,6 +31,7 @@ header {
 
 }
 
+
 header h1 {
     margin: 0;
     font-size: 1.5rem;
@@ -41,6 +42,28 @@ position: absolute;
 left: 50px;
     width: 500px;
     height: auto;
+}
+
+.produto1-img {
+    position: absolute;
+    left: 50px;
+        width: 250px;
+        height: 250px;
+top: 715px;
+}
+
+.produto2-img {
+    position: absolute;
+    left:302px;
+
+    width: 250px;
+        height: 250px;
+top: 715px;
+}
+
+input[tipe="checkbox"]{
+    width: 20px;
+    height: 20px;
 }
 
 footer {

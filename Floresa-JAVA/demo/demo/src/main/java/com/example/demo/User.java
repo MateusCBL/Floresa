@@ -3,7 +3,7 @@ package com.example.demo;
 import jakarta.persistence.*;
 import jakarta.persistence.Entity;
 
-public class User {
+
 
 
 
@@ -26,4 +26,4 @@ public class User {
 
 
     }
-}
+
